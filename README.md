@@ -23,6 +23,17 @@ Use `.env.example` as a template. Do not commit `.env` to GitHub.
 
 ---
 
+## 🚀 GitHub Pages Deployment
+
+This project is configured for GitHub Pages via GitHub Actions.
+
+1. In `vite.config.js`, set `base` to `"/your-repo-name/"` (already set for this repo).
+2. In GitHub, add a repository secret named `VITE_UNSPLASH_ACCESS_KEY`.
+3. Go to `Settings` → `Pages` and select `GitHub Actions` as the source.
+4. Push to `main` to trigger deployment.
+
+---
+
 ## 🔍 Image Search
 
 Develop an image search application with keywords. Watch the demo video showing how the application works.
@@ -129,4 +140,3 @@ The `LoadMoreBtn` component creates a button with the text "Load More". When the
 The `ImageModal` component should be rendered inside the `App` component and should receive all necessary data and functions from `App` as props.
 
 When an image in the gallery is clicked, an `ImageModal` window with a dark background showing the image in large format should open. The modal window should be configured to close when the `ESC` key is pressed or when it is clicked outside. Use the [React Modal](https://github.com/reactjs/react-modal?tab=readme-ov-file#examples) library to implement the modal window functionality.
-
