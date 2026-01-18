@@ -11,7 +11,7 @@ import {
 } from "./components/features/image";
 
 import { LoadMoreBtn, Loader } from "./components/features/loader";
-import ErrorMessage from "./components/features/error/ErrorMessage/ErrorMessage";
+import { ErrorMessage } from "./components/features/error";
 
 function App() {
   const [images, setImages] = useState([]);
