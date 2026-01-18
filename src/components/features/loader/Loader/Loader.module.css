@@ -1,0 +1,6 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0 0;
+  filter: drop-shadow(0 8px 16px rgba(31, 210, 178, 0.2));
+}

@@ -1,0 +1,58 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Code+Pro:wght@400;600&display=swap");
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(72, 255, 198, 0.15), transparent 45%),
+    radial-gradient(circle at 90% 20%, rgba(255, 136, 92, 0.12), transparent 40%),
+    radial-gradient(circle at 50% 85%, rgba(92, 176, 255, 0.12), transparent 50%),
+    #0f1115;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color: #e8ecf2;
+}
+
+.main-content {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px 72px 24px;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark;
+  --bg-900: #0f1115;
+  --bg-800: #151922;
+  --bg-700: #1d2431;
+  --card-900: #141924;
+  --card-800: #1a2231;
+  --text-100: #eef2f7;
+  --text-300: #c8d1dc;
+  --text-500: #8c97a8;
+  --accent-500: #4cf3d1;
+  --accent-700: #1fd2b2;
+  --warning-500: #ff8a65;
+  --danger-500: #ff5e6c;
+  --shadow-900: 0 20px 40px rgba(0, 0, 0, 0.35);
+  --shadow-700: 0 12px 24px rgba(0, 0, 0, 0.3);
+}

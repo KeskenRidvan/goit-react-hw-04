@@ -1,0 +1,67 @@
+.modalContent {
+  background: linear-gradient(
+    160deg,
+    rgba(20, 25, 36, 0.96),
+    rgba(12, 15, 22, 0.98)
+  );
+  color: var(--text-100);
+  padding: 28px;
+  border-radius: 20px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(76, 243, 209, 0.15);
+}
+.reactModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 12, 16, 0.75);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+.img {
+  max-width: 80vw;
+  max-height: 70vh;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 94, 108, 0.9);
+  color: #120506;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.info {
+  margin-top: 16px;
+  font-size: 15px;
+  color: var(--text-300);
+  text-align: left;
+  display: grid;
+  gap: 6px;
+}
+
+.info strong {
+  color: var(--text-100);
+}
