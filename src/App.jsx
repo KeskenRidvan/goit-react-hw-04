@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from "react";
-import SearchBar from "./components/features/search/SearchBar/SearchBar";
-import ImageGallery from "./components/features/image/ImageGallery/ImageGallery";
-import ImageCard from "./components/features/image/ImageCard/ImageCard";
-import Loader from "./components/features/loader/Loader/Loader";
-import ErrorMessage from "./components/features/error/ErrorMessage/ErrorMessage";
-import LoadMoreBtn from "./components/features/loader/LoadMoreBtn/LoadMoreBtn";
-import ImageModal from "./components/features/image/ImageModal/ImageModal";
-import { searchImages } from "./services/api";
 import "./styles/App.css";
+import { searchImages } from "./services/api";
+
+import { useState, useEffect } from "react";
+
+import { SearchBar } from "./components/features/search";
+import {
+  ImageGallery,
+  ImageCard,
+  ImageModal,
+} from "./components/features/image";
+
+import { LoadMoreBtn, Loader } from "./components/features/loader";
+import { ErrorMessage } from "./components/features/error/ErrorMessage/ErrorMessage";
 
 function App() {
   const [images, setImages] = useState([]);

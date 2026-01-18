@@ -3,7 +3,7 @@ import styles from "./ImageModal.module.css";
 
 Modal.setAppElement("#root");
 
-function ImageModal({ isOpen, onRequestClose, image }) {
+const ImageModal = ({ isOpen, onRequestClose, image }) => {
   if (!image) return null;
   const { reactModal__Overlay, modalContent, closeBtn, img, info } = styles;
   return (
@@ -38,6 +38,6 @@ function ImageModal({ isOpen, onRequestClose, image }) {
       </div>
     </Modal>
   );
-}
+};
 
 export default ImageModal;

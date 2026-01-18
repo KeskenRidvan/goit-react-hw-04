@@ -1,6 +1,6 @@
 import styles from "./ImageGallery.module.css";
 
-function ImageGallery({ images, renderItem }) {
+const ImageGallery = ({ images, renderItem }) => {
   const { gallery } = styles;
 
   if (!images || images.length === 0) return null;
@@ -11,6 +11,6 @@ function ImageGallery({ images, renderItem }) {
       ))}
     </ul>
   );
-}
+};
 
 export default ImageGallery;

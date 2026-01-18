@@ -1,6 +1,6 @@
 import styles from "./ImageCard.module.css";
 
-function ImageCard({ image, onClick }) {
+const ImageCard = ({ image, onClick }) => {
   const { card, img } = styles;
 
   return (
@@ -12,6 +12,6 @@ function ImageCard({ image, onClick }) {
       />
     </div>
   );
-}
+};
 
 export default ImageCard;
